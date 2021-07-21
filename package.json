@@ -1,0 +1,15 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "description": "ADN email template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server index.html"
+  },
+  "author": "Anakhaev D.N",
+  "license": "ISC",
+  "private":"true",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
