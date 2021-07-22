@@ -37,12 +37,14 @@
 			mso-table-lspace: 0pt;
 			mso-table-rspace: 0pt;
 		}
+
 		.logo h2 {
 			color: #6c6c6c;
 			/* font-size: 14px; */
 			font-weight: 400;
 			letter-spacing: 0.28px;
 		}
+
 		.menu a {
 			color: #6c6c6c;
 			font-size: 14px;
@@ -50,19 +52,23 @@
 			letter-spacing: 0.28px;
 			text-decoration: none;
 		}
+
 		.menu td {
 			padding-left: 30px;
 		}
+
 		.header-td {
 			padding-bottom: 25px;
 			padding-top: 25px;
 		}
+
 		.title-td h3 {
 			color: #6c6c6c;
 			font-size: 50px;
 			font-weight: 400;
 			letter-spacing: 0.28px;
 		}
+
 		.offer-link {
 			color: #ffffff;
 			font-size: 14px;
@@ -77,13 +83,16 @@
 			border-radius: 50px;
 			margin: 0 auto;
 		}
+
 		.offer-link:hover {
 			background: #ec5483;
 		}
+
 		.features-td {
 			padding-top: 100px;
 			padding-bottom: 40px;
 		}
+
 		.features-td p {
 			color: #8c8c8c;
 			font-size: 14px;
@@ -91,6 +100,7 @@
 			line-height: 26px;
 			letter-spacing: 0.28px;
 		}
+
 		.features-td a {
 			color: #6c6c6c;
 			font-size: 14px;
@@ -99,10 +109,12 @@
 			text-decoration: none;
 			text-transform: uppercase;
 		}
+
 		.testimonial-td {
 			padding-top: 60px;
 			padding-bottom: 40px;
 		}
+
 		.block-td p {
 			color: #8c8c8c;
 			font-size: 14px;
@@ -110,19 +122,35 @@
 			line-height: 26px;
 			letter-spacing: 0.28px;
 		}
+
 		.block-table  td {
+			position: relative;
 			padding-top: 40px;
 			padding-bottom: 40px;
+			padding-left: 10px;
+    		padding-right: 10px;
 		}
+
+		.block-table  td::before {
+			content: '\2666';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			font-size: 28px;
+    		margin-bottom: -8px;
+		}
+
 		.block-table {
 			border-top: 1px solid #e6e6e6;
 			border-left: 1px solid #e6e6e6;
 			border-right: 1px solid #e6e6e6;
 			border-bottom: 1px solid #e6e6e6;
 		}
+
 		.author {
 			padding-top: 20px;
 		}
+
 		.author h3 {
 			margin-top: 20px;
 			margin-bottom: 5px;
@@ -130,6 +158,7 @@
 			font-weight: 600;
 			letter-spacing: 0.56px;
 		}
+
 		.author p {
 			margin: 0;
 			color: #8c8c8c;
@@ -137,6 +166,7 @@
 			font-size: 14;
 			letter-spacing: 0.56px;
 		}
+
 		.footer-td {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -174,6 +204,116 @@
             font-weight: 600;
             text-decoration: none;
             color: #bcc9dd;
+        }
+
+		@media (max-width: 870px) {
+            .table-850 {
+                width: 600px !important;
+            }
+
+            .table-600 {
+                width: 550px !important;
+            }
+
+            .block-table {
+                width: 200px !important;
+            }
+
+            .block-table p br {
+                display: none !important;
+            }
+
+            .features-td td {
+                display: block !important;
+                margin-bottom: 50px !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 400px !important;
+            }
+
+            .table-600 {
+                width: 320px !important;
+            }
+
+			.title-td h3 {
+				font-size: 38px;
+			}
+
+            .block-td {
+                display: block !important;
+                margin-bottom: 50px !important;
+                padding: 0 !important;
+            }
+
+            .testimonial-td tr {
+                display: block !important;
+            }
+
+            .block-table {
+                width: 320px !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            .author {
+                width: 200px !important;
+            }
+
+            .logo {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+                width: 200px !important;
+                margin-bottom: 20px !important;
+            }
+
+            .logo h2 {
+                margin: 0 auto !important;
+            }
+
+            .menu {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .table-850 {
+                width: 300px !important;
+            }
+
+            .table-600 {
+                width: 260px !important;
+            }
+
+			.title-td h3 {
+				font-size: 35px;
+			}
+
+            .block-table {
+                width: 260px !important;
+            }
+
+            .author {
+                width: 130px !important;
+            }
+
+            .blockqoute-td {
+                padding-top: 50px !important;
+                padding-bottom: 50px !important;
+            }
+
+            .footer-menu-td table {
+                width: 260px !important;
+            }
+            
+            .menu td {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
         }
 	</style>
 </head>
